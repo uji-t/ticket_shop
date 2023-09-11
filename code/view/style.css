@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 1200px;
+  /* 適切な最大幅を設定してください */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.container h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  margin-top: 100px;
+}
+
+.sidebar-left,
+.sidebar-right {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.sidebar-left {
+  left: 0;
+  background-color: lightblue;
+}
+
+.sidebar-right {
+  right: 0;
+  background-color: lightblue;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  /* 3列の等分割 */
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  padding: 15px;
+  border: 3px solid #ccc;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.card span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  /* 左右のサイドバーの幅分だけ余白を設定する */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.pick_up {
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  color: yellowgreen;
+  top: 500px;
+  /* サイドバーの高さ分だけ下に位置を調整する */
+  margin-left: 16%;
+  margin-right: 15%;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* 光沢効果を表現する影のスタイル */
+  transform: scale(1.05);
+  /* カードを少し拡大する効果 */
+}
+

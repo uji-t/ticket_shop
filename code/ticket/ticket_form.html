@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>チケット登録ページ</title>
+<link rel="stylesheet" href="../view/html.css">
+</head>
+<body>
+
+  <h1>チケット登録ページ</h1>
+
+  <br/>
+
+  <form method="post" action="ticket_form_check.php" enctype="multipart/form-data">
+    <h2>公演名</h2>
+    公演名を入力してください。
+    <br/>
+    <br/>
+    <input type="text" name="ticket_name" style="width: 200px">
+    <br/>
+    <h2>公演紹介文</h2>
+    公演の説明を記載してください。
+    <br/>
+    <br/>
+    <input type="text" name="ticket_memo" style="width: 400px;height: 10ch;">
+    <br/>
+    <br/>
+
+    <h2>日程</h2>
+    最大9公演まで登録することができます
+    <br/>
+    <br/>
+    <table >
+      <th>開催日</th>
+      <th>開催時間</th>
+      <th>終了時間</th>
+      <tr>
+        <td>1.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>2.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>3.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>4.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>5.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>6.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>7.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>8.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+      <tr>
+        <td>9.<input type="date" name="day_start[]" style="width: 200px"></td>
+        <td><input type="text" name="time_start[]" style="width: 200px">～</td>
+        <td><input type="text" name="time_end[]" style="width: 200px"></td>
+      </tr>
+    </table>
+
+    <h2>会場</h2>
+    会場名と住所を入力してください
+    <br/>
+    <br/>
+      <table>
+        <th>会場名</th>
+        <th>住所</th>
+        <tr>
+          <td><input type="text" name="place_name" style="width: 200px"></td>
+          <td><input type="text" name="place_address" style="width: 400px;"></td>
+        </tr>      
+      </table>
+    <br/>
+
+
+    <h2>シート設定</h2>
+    シート名・座席数・金額を入力してください。
+    <br/>
+    <br/>
+    <table>
+      <th>シート名</th><th>シート数</th><th>金額</th>
+      <tr>
+        <td>
+          <input type="text" name="sheet_name[]"style="width:200px">
+        </td>
+        <td>
+          <input type="number" name="sheet_quantity[]"style="width: 50px">席
+        </td>
+        <td>
+          <input type="number" name="price[]">円
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" name="sheet_name[]"style="width:200px">
+        </td>
+        <td>
+          <input type="number" name="sheet_quantity[]" style="width: 50px">席
+        </td>
+        <td>
+          <input type="number" name="price[]">円
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="sheet_name[]"style="width:200px">
+        </td>
+        <td>
+          <input type="number" name="sheet_quantity[]"style="width: 50px">席
+        </td>
+        <td>
+          <input type="number" name="price[]">円
+        </td>
+      </tr>
+    </table>
+    <h2>チケット写真</h2>
+    チケット写真を登録してください。
+    <br/>
+    <br/>
+    <input type="file" name="ticket_photo" style="width: 400px" >
+    <br/>
+    <br/>
+    <br/>
+    <input type="button" onclick="history.back()" value="戻る">
+    <input type="submit" value="OK"><br/>
+  </form>
+
+</body>
+</html>

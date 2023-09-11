@@ -1,0 +1,15 @@
+h1{
+  font-size: 30px;
+}
+
+
+
+th{
+  background-color: grey;
+  color: whitesmoke;
+}
+
+td{
+  max-width: 500px;
+  text-align: center;
+}

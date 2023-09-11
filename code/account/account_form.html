@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../view/html.css">
+<title>お客様情報の登録</title>
+</head>
+<body>
+
+  <h1>お客様情報を入力してください。</h1>
+  <br/>
+  <form method="post" action="account_form_check.php">
+  お名前<br/>
+  姓：<input type="text" name="account_name1" style="width: 100px">
+  名：<input type="text" name="account_name2" style="width: 100px"><br/>
+  フリガナ<br/>
+  姓：<input type="text" name="account_furigana1" style="width: 100px">
+  名：<input type="text" name="account_furigana2" style="width: 100px"><br/>
+  性別<br/>
+  <input type="radio" name="account_sex" value="1" checked>男性<br />
+  <input type="radio" name="account_sex" value="2" >女性<br />
+  電話番号<br />
+  <input type="text" name="account_tel" style="width:200px"><br />
+  メールアドレス<br/>
+  <input type="text" name="account_email" style="width: 200px"><br/>
+  郵便番号<br/>
+  <input type="text" name="account_postal1" style="width: 80px">
+  -
+  <input type="text" name="account_postal2" style="width: 120px"><br />
+  住所<br/>
+  <input type="text" name="account_address" style="width: 500px"><br/>
+  登録パスワード<br />
+  <input type="password" name="account_pass" style="width:200px"><br />
+  パスワードをもう一度入力してください<br />
+  <input type="password" name="account_pass2" style="width:200px"><br />
+  <br/>
+  <input type="button" onclick="history.back()" value="戻る">
+  <input type="submit" value="OK"><br/>
+  </form>
+
+</body>
+</html>
